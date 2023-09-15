@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="header">
+        <div class="header__title">
+            <img src="img\logo.png" alt="rock-paper-scissors">
+        </div>
+    </div>
+
+    <div class="middle">
+
+        <div class="middle__user-container">
+            <div class="middle__user-container__rock-container hands">
+                <img src="img\rock_right.png" alt="rock">
+            </div>
+            <div class="middle__user-container__paper-container hands">
+                <img src="img\paper_right.png" alt="paper">
+            </div>
+            <div class="middle__user-container__scissors-container hands">
+                <img src="img\scissors_right.png" alt="scissors">
+            </div>
+        </div>
+
+        <div class="middle__title-container">
+            <div class="middle__title-container__logo">
+                <img src="img\logo.png" alt="rock-paper-scissors">
+            </div>
+            <div class="middle__title-container__instruction blink">
+                press ctrl+enter to start!
+            </div>
+        </div>
+
+        <div class="middle__waiting-container">
+            <div class="middle__waiting-container__text">
+                make your move
+            </div>
+        </div>
+
+        <div class="middle__result-container">
+            <div class="middle__result-container__details-text">
+                rock beats paper
+            </div>
+            <div class="middle__result-container__stage">
+                <div class="middle__result-container__stage__hand1">
+                    <img src="img\rock_right.png" alt="">
+                </div>
+                <div class="middle__result-container__stage__hand2">
+                    <img src="img\paper_left.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="middle__cpu-container">
+            <div class="middle__cpu-container__rock-container">
+                <img src="img\rock_left.png" alt="rock">
+            </div>
+            <div class="middle__cpu-container__paper-container">
+                <img src="img\paper_left.png" alt="paper">
+            </div>
+            <div class="middle__cpu-container__scissors-container">
+                <img src="img\scissors_left.png" alt="scissors">
+            </div>
+        </div>
+
+    </div>
+
+    <script src="utils.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
