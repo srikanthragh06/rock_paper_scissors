@@ -22,21 +22,22 @@ img {
 
 .cursor{
     color: rgb(254, 191, 29);
-    font-size: 32px;
     font-family: 'Mooli', sans-serif;
 
-    animation: blink 2s linear infinite;
+    animation: blink 3s linear infinite;
 }
 
 .score{
-    position:absolute;
-    left:2%;
-    top:5%;
+    
 
     border: 0.5px solid purple;
 }
 
-.score__user-score,.score__cpu-score{
+.score__user-score{
+    position:absolute;
+    left:2%;
+    top:10%;
+
     font-size: 32px;
     color: white;
     font-family: 'Mooli', sans-serif;
@@ -45,6 +46,18 @@ img {
     border:0.5px solid yellow;
 }
 
+.score__cpu-score{
+    position:absolute;
+    left:85%;
+    top:10%;
+
+    font-size: 32px;
+    color: white;
+    font-family: 'Mooli', sans-serif;
+    /* text-align: center; */
+
+    border:0.5px solid yellow;
+}
 
 .header{
 
@@ -154,7 +167,6 @@ img {
 .middle__waiting-container__text{
 
     position:relative;
-    left:-10%;
     top:-10%;
 
     font-size: 64px;

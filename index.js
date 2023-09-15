@@ -15,6 +15,7 @@ function generateCPUMove(){
 
 
 
+
 function main(){
     // tag initialization
     const scoreDisplay=document.querySelector('.score');
@@ -42,8 +43,12 @@ function main(){
     //hideDiv(middleWaiting);
     hideDiv(middleResult);
     
-    typeWriterEffect(userScoreDisplay,"user_score: 0",50);
-    typeWriterEffect(cpuScoreDisplay,"cpu_score: 0",50);
+    addTypeWriterEffect(middleWaiting,"make your move...",50);
+    addTypeWriterEffect(userScoreDisplay,"user_score: 0",50);
+    addTypeWriterEffect(cpuScoreDisplay,"cpu_score: 0",50);
+    setTimeout(function() {
+        updateTypeWriterEffect(userScoreDisplay,"1",1);
+    },3000);
 
 
 }
