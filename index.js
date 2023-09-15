@@ -11,14 +11,15 @@ function generateCPUMove(){
 
 }
 
-function startGameTitleTransition(titleDiv){
-    titleDiv.style.transform = "translateY(-50px)";
-}
+
 
 
 
 function main(){
     // tag initialization
+    const scoreDisplay=document.querySelector('.score');
+    const userScoreDisplay=document.querySelector('.score__user-score');
+    const cpuScoreDisplay=document.querySelector('.score__cpu-score');
     const header=document.querySelector('.header')
     const middleTitle=document.querySelector('.middle__title-container')
     const middleResult=document.querySelector('.middle__result-container');
@@ -35,12 +36,15 @@ function main(){
     // Execution
 
     removeAllBorder();
+    //hideDiv(scoreDisplay);
     //hideDiv(header);
     hideDiv(middleTitle);
     //hideDiv(middleWaiting);
     hideDiv(middleResult);
-    console.log(hands);
-    startDivTransition(middleTitle);
+    
+    typeWriterEffect(userScoreDisplay,"user_score: 0",50);
+    typeWriterEffect(cpuScoreDisplay,"cpu_score: 0",50);
+
 
 }
 main();

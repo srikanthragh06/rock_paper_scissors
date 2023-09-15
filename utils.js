@@ -15,3 +15,21 @@ function removeAllBorder(){
         allElements[i].style.border = 'none';
     }
 }
+
+function typeWriterEffect(div,phrase,speed=125){
+
+    const typeWriterDiv=div.querySelector('.typewriter')
+
+    let i=0;
+    intervalID=setInterval(function(){
+    if (i<phrase.length){
+        console.log(phrase[i]);
+        typeWriterDiv.textContent+=phrase[i];
+        i++;
+    }
+    else{
+        clearInterval(intervalID);
+        console.log('end')
+    }
+    },speed);
+}
