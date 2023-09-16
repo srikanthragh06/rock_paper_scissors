@@ -247,3 +247,17 @@ img {
 
     border: 0.5px solid red;
 }
+
+.footer{
+    position: absolute;
+    top: 70%;
+    left:55%;
+
+    color:white;
+    font-size: 24px;
+    font-family: 'Mooli', sans-serif;
+    text-align: center;
+
+    z-index: 2;
+    border: 0.5px solid red;
+}

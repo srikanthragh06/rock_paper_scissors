@@ -29,7 +29,10 @@ function getResult(moves){
 
 
 function main(){
+
+    
     // tag initialization
+    const footer=document.querySelector('.footer');
     const userScoreDisplay=document.querySelector('.score__user-score');
     const cpuScoreDisplay=document.querySelector('.score__cpu-score');
     const header=document.querySelector('.header');
@@ -65,6 +68,7 @@ function main(){
     hideDiv(middleResult);
     
     middleTitle.addEventListener('click',function(){
+        hideDiv(footer);
         hideDiv(middleTitle);
         addTypeWriterEffect(middleWaiting,"make your move...",'flex');
         addTypeWriterEffect(userScoreDisplay,"user_score: 0",'block');
