@@ -6,6 +6,11 @@ function showDiv(div,display){
     div.style.display = display;
 }
 
+function emptyDivTypeWriterText(div){
+    typeWriterText=div.querySelector('.typewriter');
+    typeWriterText.textContent='';
+}
+
 function removeAllBorder(){
     // Get all elements on the page
     var allElements = document.querySelectorAll('*');
@@ -16,9 +21,11 @@ function removeAllBorder(){
     }
 }
 
-function addTypeWriterEffect(div,phrase,speed=75){
+function addTypeWriterEffect(div,phrase,display='block',speed=50){
 
+    div.style.display=display;
     const typeWriterDiv=div.querySelector('.typewriter');
+    
 
     if (!typeWriterDiv) {
         console.error("Element with class 'typewriter' not found.");
@@ -33,7 +40,6 @@ function addTypeWriterEffect(div,phrase,speed=75){
     }
     else{
         clearInterval(intervalID);
-        console.log(`typewriter effect for ${div} completed`);
     }
     },speed);
 }
@@ -55,16 +61,26 @@ function eraseTypeWriterEffect(div,eraseIterations=1,speed=50){
     }
     else{
         clearInterval(intervalID);
-        console.log(`erase typewriter effect for ${div} completed`);
     }
     },speed);
 }
 
-function updateTypeWriterEffect(div,phrase,eraseIterations=1,speed=500){
+function updateTypeWriterEffect(div,phrase,display='block',eraseIterations=1,speed=50){
     eraseTypeWriterEffect(div,eraseIterations,speed);
     setTimeout(function(){
-        addTypeWriterEffect(div,phrase,speed);
+        addTypeWriterEffect(div,phrase,display,speed);
     }
     ,speed*eraseIterations);
     
+}
+
+function fadeOut(div){
+    
+    div.classList.add('fade-out');
+    // div.style.display='none';
+}
+
+function fadeIn(div,display){
+    div.classList.add('fade-in');
+    // div.style.display = display;
 }

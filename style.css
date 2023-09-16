@@ -27,6 +27,15 @@ img {
     animation: blink 3s linear infinite;
 }
 
+.fade-out {
+    opacity: 0;
+    transition: opacity 1s ease-in-out; /* Transition opacity over 1 second */
+}
+.fade-in{
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
 .score{
     
 
@@ -194,7 +203,19 @@ img {
 .middle__result-container__details-text{
 
     position:relative;
-    top:-5%;
+    top:10%;
+
+
+    color:white;
+    font-size: 48px;
+    font-family: 'Mooli', sans-serif;
+    text-align: center;
+
+    border: 0.5px solid green;
+}
+.middle__result-container__updation-text{
+    position:relative;
+    top:0%;
 
 
     color:white;
@@ -221,6 +242,8 @@ img {
     align-items: center;
 
     width:40%;
+
+    cursor:pointer;
 
     border: 0.5px solid red;
 }
