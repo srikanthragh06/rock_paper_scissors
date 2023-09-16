@@ -180,12 +180,14 @@ function main(){
     function updateScore(res){
 
         if (res==1){
+            let scoreDigits=findDigits(score.userScore);
             score.userScore+=1;
-            updateTypeWriterEffect(userScoreDisplay,score.userScore.toString(),'block',1,750);
+            updateTypeWriterEffect(userScoreDisplay,score.userScore.toString(),'block',scoreDigits,750);
         }
         else if(res==-1){
+            let scoreDigits=findDigits(score.cpuScore);
             score.cpuScore+=1;
-            updateTypeWriterEffect(cpuScoreDisplay,score.cpuScore.toString(),'block',1,750);
+            updateTypeWriterEffect(cpuScoreDisplay,score.cpuScore.toString(),'block',scoreDigits,750);
         }
     }
 
