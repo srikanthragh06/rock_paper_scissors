@@ -1,2 +1,31 @@
 /* 1538 722 */
 
+@media all and (max-width:1100px){
+    .middle__title-container__logo{
+        width:75%;
+    }
+    .middle__user-container,.middle__cpu-container{
+        width:18%;
+    }
+    .footer{
+        left:45%;
+    }
+    .middle__title-container__instruction{
+        top:-5%;
+    }
+}
+
+@media all and (max-width:1100px){
+    .middle__title-container__logo{
+        width:55%;
+        top:-25%;
+    }
+    .footer{
+        top:55%;
+        font-size: 18px;
+    }
+    .middle__title-container__instruction{
+        
+    }
+
+}

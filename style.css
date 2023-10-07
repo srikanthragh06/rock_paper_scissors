@@ -44,7 +44,7 @@ img {
 
 .score__user-score{
     position:absolute;
-    left:2%;
+    left:5%;
     top:10%;
 
     font-size: 32px;
@@ -57,7 +57,7 @@ img {
 
 .score__cpu-score{
     position:absolute;
-    left:85%;
+    left:82%;
     top:10%;
 
     font-size: 32px;
@@ -261,3 +261,4 @@ img {
     z-index: 2;
     border: 0.5px solid red;
 }
+
